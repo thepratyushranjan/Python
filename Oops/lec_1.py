@@ -28,8 +28,18 @@ class Student:
 # Methods:- In class write the function it's called the method
     def display(self):
         print(f" Student is {self.name} and age is {self.age} and marks is {self.marks}")
+
+
+# Static Method:- it's not used self parameter (its Working a like class.)
+# This is a decorator:- its taking input a function and return a function.
+
+    @staticmethod
+    def hello():
+        print("Hello Students")
+
 data_of_student = Student(10, "Tony Stark", 10)
 print(data_of_student.age)
 print(data_of_student.marks)
 print(data_of_student.marks)
 data_of_student.display()
+data_of_student.hello()
